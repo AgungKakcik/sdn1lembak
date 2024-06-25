@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>University Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome
+/4.7.o/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="imagesd/sdn 1 lembak.png" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <!---------Contact us-->
+    <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.0377696407663!2d104.34200969999999!3d-3.3408354000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3bca5af1c5a415%3A0x142dc8e41a3903a6!2sSDN%201%20Lembak!5e0!3m2!1sid!2sid!4v1719223869824!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>SDN 1 Lembak, Kabupaten Muara Enim</h5>
+              <p>Jl.depati Putih, Kab. Muara Enim.</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>sdn1lembak@gmail.com</h5>
+              <p>Email kami pertanyaan anda</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter email address"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br><br>
+
+   <!---footer-->
+<section class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h4>About Us</h4>
+      <p>
+        SD Negeri 1 Lembak adalah sebuah lembaga sekolah SD negeri yang beralamat di Jl. Depati Putih, Kab. Muara Enim. Kami berkomitmen untuk menciptakan lingkungan belajar yang nyaman dan inovatif.
+      </p>
+      <div class="contact">
+        <span><i class="fas fa-envelope"></i> &nbsp; info@sdn1lembak.sch.id</span>
+      </div>
+      <div class="socials">
+        <a href="mailto:your-sdn1lembak@gmail.com"><img src="imagesd/emaill.png" style="width: 30px; height: 30px;"></a>
+        <a href="https://www.facebook.com/esdesatu.lembak?mibextid=ZbWKwL"><img src="imagesd/facebook.png" style="width: 30px; height: 30px;"></a>
+        <a href="https://www.instagram.com/sdnsatu_lembak_berkarakter?igsh=MWV3ZmtmejVoNXo3bQ=="><img src="imagesd/instagram.png" style="width: 30px; height: 30px;"></a>
+        <a href="http://www.youtube.com/@sdn1lembak314"><img src="imagesd/youtube.png" style="width: 30px; height: 30px;"></a>
+      </div>
+    </div>
+
+    <div class="footer-section links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="course.html">Courses</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact-form">
+      <h4>Contact Us</h4>
+      <form action="contact.html" method="post">
+        <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+        <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+        <button type="submit" class="btn btn-big contact-btn">
+          <i class="fas fa-paper-plane"></i>
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; sdn1lembak.sch.id | Designed by WebDev
+  </div>
+</section>
+
+    <!-----Script------>
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showMenu() {
+        navlinks.style.right = "0";
+      }
+      function hideMenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
