@@ -95,11 +95,23 @@ nav img{
         height: 100vh;
         width: 200px;
         top: 0;
-        right: 0;
+        right: -200px;
         text-align: left;
-        z-index: 2;                                             
+        z-index: 2;
+        transition: 1s;                                             
     }
+    nav.fa{
+        display: none;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer; 
+    }
+.nav-links ul{
+padding: 30px;
 }
+}
+
 
 /*---course----*/
 .course{
@@ -257,7 +269,7 @@ h3{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imagesd/siswa2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imagesd/tentangkami.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -286,7 +298,7 @@ h3{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imagesd/guru3.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imagesd/tentangkami.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -640,3 +652,42 @@ th {
 .next {
     right: 10px;
 }
+
+
+.contact-info h5 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 150px;
+  }
+  .contact-info p {
+    font-size: 18px;
+    margin-left: 150px;
+  }
+  .contact-info i {
+    font-size: 36px; /* Membesarkan ukuran ikon */
+    margin-right: 10px; /* Menambahkan jarak antara ikon dan teks */
+    margin-left: 150px;
+  }
+  .photo-col {
+    position: relative;
+    width: 80%;
+    margin-left: 100px; /* Menambah margin untuk menggeser ke kanan */
+  }
+  .photo-col img {
+    width: 80%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 89%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+  }

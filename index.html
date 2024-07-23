@@ -11,20 +11,27 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
   </head>
   <body>
     <section class="header">
       <nav>
         <a href="index.html"><img src="imagesd/sdn 1 lembak.png" /></a>
-        <div class="nav-links">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="course.html">COURSE</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+        <div class="nav-links" id="navLinks">
+          <i class="ri-close-line" onclick="hideMenu(); return false;" style="color: white;"></i>
+          <ul>  
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="about.html">TENTANG</a></li>
+            <li><a href="course.html">INFO</a></li>
+            <li><a href="blog.html">AKREDITASI</a></li>
+            <li><a href="contact.html">KONTAK</a></li>
           </ul>
         </div>
+        <i class="ri-menu-line" onclick="showMenu(); return false;" style="color: white;"></i>
       </nav>
 
       <div class="text-box">
@@ -32,17 +39,17 @@
         <p>
           SD CANTIK (Cerdas,Agamis,Nyaman,Tertib,Inovatif,Kreatif) Rumah kedua
         </p>
-        <a href="./about.html" class="hero-btn">About Us</a>
+        <a href="./about.html" class="hero-btn">Selengkapnya</a>
       </div>
     </section>
 
     <!--course-->
     <section class="course">
-      <h1>About Us</h1>
+      <h1>Tentang Kami</h1>
 
       <div class="row">
         <div class="course-col">
-          <h3>Our Story</h3>
+          <h3>Cerita Kami</h3>
           <p>
             SDN 1 Lembak adalah sebuah lembaga sekolah SD negeri yang beralamat
             di Jl.depati Putih, Kab. Muara Enim.<br />SDN 1 Lembak mendapat
@@ -51,7 +58,7 @@
           </p>
         </div>
         <div class="course-col">
-          <h3>Our Vision</h3>
+          <h3>Visi</h3>
           <p>
             Terwujudnya Keunggulan dalam Prestasi , Beriman dan Taqwa Kepada
             Tuhan Yang Maha Esa dan Berperan Aktif dalam Melestarikan Lingkungan
@@ -59,7 +66,7 @@
           </p>
         </div>
         <div class="course-col">
-          <h3>Our Mission</h3>
+          <h3>Misi</h3>
           <p>
             1. Meningkatkan Disiplin dalam Kegiatan Belajar Mengajar ( KBM )<br />
             2. Mengefektifkan Proses Belajar Mengajaar Berbasis PAKEM<br />
@@ -76,7 +83,7 @@
 
     <!--our facilites-->
     <section class="campus">
-      <h1>Our Facilities</h1>
+      <h1>Fasilitas</h1>
 
       <div class="row">
         <div class="campus-col">
@@ -104,7 +111,7 @@
 
     <!---testimonials-->
     <section class="testimonials">
-      <h1>What Our Parents of Students Says ?</h1>
+      <h1>Apa Pendapat Orang Tua Siswa ?</h1>
       <p>Beberapa pendapat orang tua siswa mengenai SD Negeri 1 Lembak</p>
       <div class="row">
         <div class="testimonial-col">
@@ -139,83 +146,63 @@
     <!---Call To Action-->
 
     <section class="cta">
-      <h1>Enroll for our various courses<br />anywhere</h1>
-      <a href="../SDN1LEMBAK/contact.html" class="hero-btn">Contact Us</a>
+      <h1>Daftar Untuk Bergabung Dengan Kami<br />Disini</h1>
+      <a href="../SDN1LEMBAK/contact.html" class="hero-btn">Kontak Kami</a>
     </section>
 
-    <!---footer-->
-    <section class="footer">
+     <!---footer-->
+     <section class="footer">
       <div class="footer-content">
         <div class="footer-section about">
-          <h4>About Us</h4>
+          <h4>Tentang Kami</h4>
           <p>
             SD Negeri 1 Lembak adalah sebuah lembaga sekolah SD negeri yang
             beralamat di Jl. Depati Putih, Kab. Muara Enim. Kami berkomitmen
             untuk menciptakan lingkungan belajar yang nyaman dan inovatif.
           </p>
           <div class="contact">
-            <span
-              ><i class="fas fa-envelope"></i> &nbsp;
-              info@sdn1lembak.sch.id</span
-            >
+            <span><i class="fas fa-envelope"></i> &nbsp;info@sdn1lembak.sch.id</span>
           </div>
           <div class="socials">
-            <a href="mailto:your-sdn1lembak@gmail.com"
-              ><img src="imagesd/emaill.png" style="width: 30px; height: 30px"
-            /></a>
-            <a href="https://www.facebook.com/esdesatu.lembak?mibextid=ZbWKwL"
-              ><img
-                src="imagesd/facebook.png"
-                style="width: 30px; height: 30px"
-            /></a>
-            <a
-              href="https://www.instagram.com/sdnsatu_lembak_berkarakter?igsh=MWV3ZmtmejVoNXo3bQ=="
-              ><img
-                src="imagesd/instagram.png"
-                style="width: 30px; height: 30px"
-            /></a>
-            <a href="http://www.youtube.com/@sdn1lembak314"
-              ><img src="imagesd/youtube.png" style="width: 30px; height: 30px"
-            /></a>
+            <a href="mailto:your-sdn1lembak@gmail.com"><img src="imagesd/emaill.png" style="width: 30px; height: 30px" /></a>
+            <a href="https://www.facebook.com/esdesatu.lembak?mibextid=ZbWKwL"><img src="imagesd/facebook.png" style="width: 30px; height: 30px" /></a>
+            <a href="https://www.instagram.com/sdnsatu_lembak_berkarakter?igsh=MWV3ZmtmejVoNXo3bQ=="><img src="imagesd/instagram.png" style="width: 30px; height: 30px" /></a>
+            <a href="http://www.youtube.com/@sdn1lembak314"><img src="imagesd/youtube.png" style="width: 30px; height: 30px" /></a>
           </div>
         </div>
 
         <div class="footer-section links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="course.html">Courses</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="course.html">Info</a></li>
+            <li><a href="blog.html">Akreditasi</a></li>
+            <li><a href="contact.html">Kontak</a></li>
           </ul>
         </div>
 
         <div class="footer-section contact-form">
-          <h4>Contact Us</h4>
-          <form action="contact.html" method="post">
-            <input
-              type="email"
-              name="email"
-              class="text-input contact-input"
-              placeholder="Your email address..."
-            />
-            <textarea
-              name="message"
-              class="text-input contact-input"
-              placeholder="Your message..."
-            ></textarea>
-            <button type="submit" class="btn btn-big contact-btn">
-              <i class="fas fa-paper-plane"></i>
-              Send
-            </button>
-          </form>
+          <h4>Ingin tahu informasi lebih banyak?</h4>
+          <p>Kunjungi halaman <a href="course.html">Info</a> kami untuk informasi lebih lanjut.</p>
         </div>
+        
       </div>
 
       <div class="footer-bottom">
-        &copy; sdn1lembak.sch.id | Designed by WebDev
+        &copy; sdn1lembak.sch.id | Designed by Wooby
       </div>
     </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
